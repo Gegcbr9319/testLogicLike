@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import {Cards, Menu} from '../index';
 
 import styles from './App.module.scss';
 
@@ -7,7 +8,7 @@ export const App = () => {
 
   return (
     <>
-
+    <Menu />
     <h2>Start</h2>
      </>
   )
