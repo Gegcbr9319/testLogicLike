@@ -1,0 +1,46 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 234px;
+  border-radius: 18px;
+  border: 1px solid rgb(207, 207, 228);
+ padding: 12px;
+  
+}
+
+.input {
+  display: none;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    
+   
+ 
+  height: 42px;
+  width: 222px;
+  font: Nunito;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.label_checked {
+  display: flex;
+  align-items: center;
+  
+  
+  height: 42px;
+  width: 222px;
+  font: Nunito;
+  font-weight: 800;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color:rgb(95, 191, 119);
+  border-radius: 18px;
+}
+
+.span{
+  padding: 12px;
+}
