@@ -1,14 +1,21 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 import styles from './Menu.module.scss';
 
+interface IFilter {
+  setFilter: (filter: string) => void;
+}
 
 
-export const Menu = () => {
+export const Menu : FC<IFilter> = ({setFilter}) => {
   const [value, setValue] = useState('all');
   
   const changeValue = (e: ChangeEvent<HTMLInputElement>) =>{
     setValue(e.target.id);
+    setFilter(e.target.value);
   }
+
+
+
   return (
     <div className={styles.inputs}>
        
